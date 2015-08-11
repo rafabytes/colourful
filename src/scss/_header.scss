@@ -1,7 +1,19 @@
-header#masterheader {
+header#masthead {
     nav#primarynav {
         margin-bottom: 0;
+        color: #fff;
         border: none;
         border-radius: 0;
+        @include linear-gradient(90deg, #5C258D 10%, #4389A2 90%);
+        .navbar-brand {
+            color: #fff;
+        }
+        .navbar-nav {
+            &>li {
+                &>a {
+                    color: #fff;
+                }
+            }
+        }
     }
 }

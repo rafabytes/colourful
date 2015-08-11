@@ -4,7 +4,7 @@ html {
   font-size: 18px;
 }
 body {
-  padding-top: 50px;
+//  padding-top: 50px;
   background: color(body-background);
   color: color(text);
   font-family: 'Roboto', sans-serif;
@@ -49,5 +49,15 @@ img {
     text-align: center;
     p {
         font-weight: 300;
+    }
+}
+.table {
+    display: table;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    .align-middle {
+        display: table-cell;
+        vertical-align: middle
     }
 }

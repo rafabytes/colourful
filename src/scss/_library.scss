@@ -49,3 +49,11 @@
 @function color($request) {
   @return map-get($color, $request);
 }
+
+@mixin linear-gradient($deg, $color-start, $color-stop) {
+    background: -webkit-linear-gradient($deg, $color-start, $color-stop); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient($deg, $color-start, $color-stop); /* FF3.6+ */
+    background:     -ms-linear-gradient($deg, $color-start, $color-stop); /* IE10 */
+    background:      -o-linear-gradient($deg, $color-start, $color-stop); /* Opera 11.10+ */
+    background:         linear-gradient($deg, $color-start, $color-stop); /* W3C */
+}
